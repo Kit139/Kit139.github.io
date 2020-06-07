@@ -2154,6 +2154,7 @@ h6 {
 body,
 html {
   height: 100%;
+  background-color: white;
 }
 html {
   font-family: sans-serif;
