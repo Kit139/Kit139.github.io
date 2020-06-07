@@ -33,7 +33,7 @@
 						<div class="logo">
 							<a href="https://kit139.github.io/">
 								<img class="logo"
-									src="https://kit139.github.io//media/images/site_avatar.png?v=1591505344628"
+									src="https://kit139.github.io//media/images/site_avatar.png?v=1591516215816"
 									alt="">
 							</a>
 						</div>
@@ -72,7 +72,7 @@
 							<div class="search-lightbox">
 								<div class="search-body">
 
-									<form id="gridea-search-form" data-update="1591505344628" action="/search/" class="search-form">
+									<form id="gridea-search-form" data-update="1591516215816" action="/search/" class="search-form">
 										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
 										<button type="submit" class="submit" aria-label="Submit">
 											<i class="fa fa-search" aria-hidden="true"></i>
@@ -143,13 +143,10 @@
                         <div class="layout-post-content">
                           <div class="layout-post-item">
                             
-                            <ul>
-<li>我们知道，在一台计算机中，我们可以同时打开许多软件，比如同时浏览网页、听音乐、打字等等，看似非常正常。但仔细想想，为什么计算机可以做到这么多软件同时运行呢？这就涉及到计算机中的两个重要概念：<strong>多进程和多线程了</strong>。</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zMC5sZ3N0YXRpYy5jb20vaS9pbWFnZTMvTTAxLzcxL0IyL0NncTJ4bDVuRGdLQWVYN0dBQUlGRjRoMEV3dzUyMy5wbmc?x-oss-process=image/format,png" alt="" loading="lazy"></figure>
+                            <p>我们知道，在一台计算机中，我们可以同时打开许多软件，比如同时浏览网页、听音乐、打字等等，看似非常正常。但仔细想想，为什么计算机可以做到这么多软件同时运行呢？这就涉及到计算机中的两个重要概念：<strong>多进程和多线程了</strong>。</p>
 <p>同样，在编写爬虫程序的时候，为了提高爬取效率，我们可能想同时运行多个爬虫任务。这里同样需要涉及多进程和多线程的知识。</p>
 <p>本课时，我们就先来了解一下多线程的基本原理，以及在 Python 中如何实现多线程。</p>
-<figure data-type="image" tabindex="2"><img src="http://image.baidu.com/search/detail?ct=503316480&amp;z=undefined&amp;tn=baiduimagedetail&amp;ipn=d&amp;word=%E5%A4%9A%E7%BA%BF%E7%A8%8B&amp;step_word=&amp;ie=utf-8&amp;in=&amp;cl=2&amp;lm=-1&amp;st=undefined&amp;hd=undefined&amp;latest=undefined&amp;copyright=undefined&amp;cs=579102555,1316957378&amp;os=1552182645,1530734095&amp;simid=3393011746,387580757&amp;pn=0&amp;rn=1&amp;di=16720&amp;ln=1937&amp;fr=&amp;fmq=1591504877262_R&amp;fm=&amp;ic=undefined&amp;s=undefined&amp;se=&amp;sme=&amp;tab=0&amp;width=undefined&amp;height=undefined&amp;face=undefined&amp;is=0,0&amp;istype=0&amp;ist=&amp;jit=&amp;bdtype=0&amp;spn=0&amp;pi=0&amp;gsm=0&amp;objurl=http%3A%2F%2Fimage.mamicode.com%2Finfo%2F201709%2F20180111002756633063.png&amp;rpstart=0&amp;rpnum=0&amp;adpicid=0&amp;force=undefined,jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="http://aliyunzixunbucket.oss-cn-beijing.aliyuncs.com/png/20180111000301406703.png" alt="" loading="lazy"></figure>
 <h4 id="多线程的含义">多线程的含义</h4>
 <p>说起多线程，就不得不先说什么是线程。然而想要弄明白什么是线程，又不得不先说什么是进程。</p>
 <p>进程我们可以理解为是一个可以独立运行的程序单位，比如打开一个浏览器，这就开启了一个浏览器进程；打开一个文本编辑器，这就开启了一个文本编辑器进程。但一个进程中是可以同时处理很多事情的，比如在浏览器中，我们可以在多个选项卡中打开多个页面，有的页面在播放音乐，有的页面在播放视频，有的网页在播放动画，它们可以同时运行，互不干扰。为什么能同时做到同时运行这么多的任务呢？这里就需要引出线程的概念了，其实这一个个任务，实际上就对应着一个个线程的执行。</p>
