@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+<title>多路加速，了解多线程基本原理 - 爱爬虫与大数据</title>
+<meta name="description" content="温故而知新">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link type='text/css' rel='stylesheet' href='https://kit139.github.io//styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src='https://kit139.github.io//media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</head>
+
+<body>
+  <div class="layout theme-dark">
+    <div class="layout-header">
+
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+
+					<div class="navbar">
+
+						<div class="logo">
+							<a href="https://kit139.github.io/">
+								<img class="logo"
+									src="https://kit139.github.io//media/images/site_avatar.png?v=1591505344628"
+									alt="">
+							</a>
+						</div>
+
+						<div class="menu d-md-inline-block d-none">
+							<ul class="layout-navigation-list">
+								
+								<li class="layout-navigation-item"><a title="首页"
+										href="/">首页</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="归档"
+										href="/archives">归档</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="标签"
+										href="/tags">标签</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="关于"
+										href="/post/about">关于</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="item d-md-inline-block d-none">
+							<div class="search-icon">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
+
+
+
+						<div class="d-md-inline-block d-none">
+							<div class="search-lightbox">
+								<div class="search-body">
+
+									<form id="gridea-search-form" data-update="1591505344628" action="/search/" class="search-form">
+										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
+										<button type="submit" class="submit" aria-label="Submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="nav d-md-none d-inline-block">
+							<div class="trigger">
+								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+</div>
+    <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
+			
+			<li class="layout-collapse-item"><a title="关于" href="/post/about">关于</a></li>
+			
+
+		</ul>
+	</div>
+</div>
+
+    <div class="layout-content">
+      <div class="layout-content-main">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-9">
+              <div class="layout-post">
+                <div class="layout-post-body">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-10">
+                      <div class="layout-post-main m-right m-md-right">
+                        <div class="layout-post-header">
+                          <h1 class="layout-post-title">多路加速，了解多线程基本原理</h1>
+                          <div class="layout-post-meta">
+                            <div class="item">
+                              
+                            </div>
+                            <div class="item">
+                              <span>2020-06-07</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layout-post-content">
+                          <div class="layout-post-item">
+                            
+                            <ul>
+<li>我们知道，在一台计算机中，我们可以同时打开许多软件，比如同时浏览网页、听音乐、打字等等，看似非常正常。但仔细想想，为什么计算机可以做到这么多软件同时运行呢？这就涉及到计算机中的两个重要概念：<strong>多进程和多线程了</strong>。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9zMC5sZ3N0YXRpYy5jb20vaS9pbWFnZTMvTTAxLzcxL0IyL0NncTJ4bDVuRGdLQWVYN0dBQUlGRjRoMEV3dzUyMy5wbmc?x-oss-process=image/format,png" alt="" loading="lazy"></figure>
+<p>同样，在编写爬虫程序的时候，为了提高爬取效率，我们可能想同时运行多个爬虫任务。这里同样需要涉及多进程和多线程的知识。</p>
+<p>本课时，我们就先来了解一下多线程的基本原理，以及在 Python 中如何实现多线程。</p>
+<figure data-type="image" tabindex="2"><img src="http://image.baidu.com/search/detail?ct=503316480&amp;z=undefined&amp;tn=baiduimagedetail&amp;ipn=d&amp;word=%E5%A4%9A%E7%BA%BF%E7%A8%8B&amp;step_word=&amp;ie=utf-8&amp;in=&amp;cl=2&amp;lm=-1&amp;st=undefined&amp;hd=undefined&amp;latest=undefined&amp;copyright=undefined&amp;cs=579102555,1316957378&amp;os=1552182645,1530734095&amp;simid=3393011746,387580757&amp;pn=0&amp;rn=1&amp;di=16720&amp;ln=1937&amp;fr=&amp;fmq=1591504877262_R&amp;fm=&amp;ic=undefined&amp;s=undefined&amp;se=&amp;sme=&amp;tab=0&amp;width=undefined&amp;height=undefined&amp;face=undefined&amp;is=0,0&amp;istype=0&amp;ist=&amp;jit=&amp;bdtype=0&amp;spn=0&amp;pi=0&amp;gsm=0&amp;objurl=http%3A%2F%2Fimage.mamicode.com%2Finfo%2F201709%2F20180111002756633063.png&amp;rpstart=0&amp;rpnum=0&amp;adpicid=0&amp;force=undefined,jpg" alt="" loading="lazy"></figure>
+<h4 id="多线程的含义">多线程的含义</h4>
+<p>说起多线程，就不得不先说什么是线程。然而想要弄明白什么是线程，又不得不先说什么是进程。</p>
+<p>进程我们可以理解为是一个可以独立运行的程序单位，比如打开一个浏览器，这就开启了一个浏览器进程；打开一个文本编辑器，这就开启了一个文本编辑器进程。但一个进程中是可以同时处理很多事情的，比如在浏览器中，我们可以在多个选项卡中打开多个页面，有的页面在播放音乐，有的页面在播放视频，有的网页在播放动画，它们可以同时运行，互不干扰。为什么能同时做到同时运行这么多的任务呢？这里就需要引出线程的概念了，其实这一个个任务，实际上就对应着一个个线程的执行。</p>
+<p>而进程呢？它就是线程的集合，进程就是由一个或多个线程构成的，<strong>线程是操作系统进行运算调度的最小单位，是进程中的一个最小运行单元</strong>。比如上面所说的浏览器进程，其中的播放音乐就是一个线程，播放视频也是一个线程，当然其中还有很多其他的线程在同时运行，这些线程的并发或并行执行最后使得整个浏览器可以同时运行这么多的任务。</p>
+<p>了解了线程的概念，多线程就很容易理解了，多线程就是一个进程中同时执行多个线程，前面所说的浏览器的情景就是典型的多线程执行。</p>
+<h4 id="并发和并行">并发和并行</h4>
+<p>说到多进程和多线程，这里就需要再讲解两个概念，那就是并发和并行。我们知道，一个程序在计算机中运行，其底层是处理器通过运行一条条的指令来实现的。</p>
+<p>并发，英文叫作 concurrency。它是指同一时刻只能有一条指令执行，但是多个线程的对应的指令被快速轮换地执行。比如一个处理器，它先执行线程 A 的指令一段时间，再执行线程 B 的指令一段时间，再切回到线程 A 执行一段时间。</p>
+<p>由于处理器执行指令的速度和切换的速度非常非常快，人完全感知不到计算机在这个过程中有多个线程切换上下文执行的操作，这就使得宏观上看起来多个线程在同时运行。但微观上只是这个处理器在连续不断地在多个线程之间切换和执行，每个线程的执行一定会占用这个处理器一个时间片段，同一时刻，其实只有一个线程在执行。</p>
+<p>并行，英文叫作 parallel。它是指同一时刻，有多条指令在多个处理器上同时执行，并行必须要依赖于多个处理器。不论是从宏观上还是微观上，多个线程都是在同一时刻一起执行的。</p>
+<p><strong>并行只能在多处理器系统中存在</strong>，如果我们的计算机处理器只有一个核，那就不可能实现并行。而<strong>并发在单处理器和多处理器系统中都是可以存在的，因为仅靠一个核，就可以实现并发</strong>。</p>
+<p>举个例子，比如系统处理器需要同时运行多个线程。如果系统处理器只有一个核，那它只能通过并发的方式来运行这些线程。如果系统处理器有多个核，当一个核在执行一个线程时，另一个核可以执行另一个线程，这样这两个线程就实现了并行执行，当然其他的线程也可能和另外的线程处在同一个核上执行，它们之间就是并发执行。具体的执行方式，就取决于操作系统的调度了。</p>
+<h4 id="多线程适用场景">多线程适用场景</h4>
+<p>在一个程序进程中，有一些操作是比较耗时或者需要等待的，比如等待数据库的查询结果的返回，等待网页结果的响应。如果使用单线程，处理器必须要等到这些操作完成之后才能继续往下执行其他操作，而这个线程在等待的过程中，处理器明显是可以来执行其他的操作的。<strong>如果使用多线程，处理器就可以在某个线程等待的时候，去执行其他的线程</strong>，<strong>从而从整体上提高执行效率</strong>。</p>
+<p>像上述场景，线程在执行过程中很多情况下是需要等待的。比如网络爬虫就是一个非常典型的例子，爬虫在向服务器发起请求之后，有一段时间必须要等待服务器的响应返回，这种任务就属于 IO 密集型任务。对于这种任务，如果我们启用多线程，处理器就可以在某个线程等待的过程中去处理其他的任务，从而<strong>提高整体的爬取效率</strong>。</p>
+<p>但并不是所有的任务都是 IO 密集型任务，还有一种任务叫作<strong>计算密集型任务</strong>，也可以称之为 <strong>CPU 密集型任务</strong>。顾名思义，就是任务的运行一直需要处理器的参与。此时如果我们开启了多线程，一个处理器从一个计算密集型任务切换到切换到另一个计算密集型任务上去，处理器依然不会停下来，始终会忙于计算，这样并不会节省总体的时间，因为需要处理的任务的计算总量是不变的。如果线程数目过多，反而还会在线程切换的过程中多耗费一些时间，整体效率会变低。</p>
+<p>所以，如果任务不全是计算密集型任务，我们可以使用多线程来提高程序整体的执行效率。尤其对于网络爬虫这种 IO 密集型任务来说，使用多线程会大大提高程序整体的爬取效率。</p>
+
+                          </div>
+                        </div>
+                        <div class="layout-post-social">
+                          <div class="item reader">
+                            <div id="/post/duo-lu-jia-su-liao-jie-duo-xian-cheng-ji-ben-yuan-li/" class="leancloud-visitors view"
+                              data-flag-title="多路加速，了解多线程基本原理">
+                              <span class="post-meta-item-text">阅读 </span>
+                              <span class="leancloud-visitors-count"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="layout-post-navigation">
+                          <div class="navigation-list">
+                            
+                            <div class="post-card row">
+                              
+                              <div class="card-content col-8 col-md-9">
+                                <div class="card-body">
+                                  <div class="header">
+                                    <a href="https://kit139.github.io/post/hello-gridea/" class="title">
+                                      <h4>Hello Gridea</h4>
+                                    </a>
+                                  </div>
+                                  <div class="inner d-none d-sm-block">
+                                    <div class="abstract">
+                                      <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-footer">
+                                  <div class="item"><span>下一篇</span></div>
+                                  <div class="item">2018-12-12</div>
+                                </div>
+                              </div>
+                              <div class="card-thumb col-4 col-md-3">
+                                <div class="thumb">
+                                  <a href="https://kit139.github.io/post/hello-gridea/"
+                                    style="background-image: url('https://kit139.github.io//post-images/hello-gridea.png');"></a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="layout-comments"></div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-2 d-none d-lg-block">
+                      <div class="layout-post-sidebar">
+                        <div class="layout-sidebar-item">
+                          <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%90%AB%E4%B9%89">多线程的含义</a></li>
+<li><a href="#%E5%B9%B6%E5%8F%91%E5%92%8C%E5%B9%B6%E8%A1%8C">并发和并行</a></li>
+<li><a href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF">多线程适用场景</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+
+    	<div class="layout-footer">
+
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+					<div class="footer">
+						<div class="row">
+							<div class="col-12 col-md-9">
+								<div class="footer-copy">
+									
+									Powered by <a href="https://github.com/getgridea/gridea" target="_blank">爱爬虫与大数据</a>
+									<div class="footer-icp d-none d-sm-inline-block">
+										<span class="px-2">⋅</span>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 d-none d-md-block">
+								<div class="footer-links">
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src='https://kit139.github.io//media/scripts/main.js'></script>
+	
+
+  </div>
+</body>
+
+</html>
