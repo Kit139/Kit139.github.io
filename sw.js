@@ -1,15 +1,1 @@
-importScripts('https://g.alicdn.com/kg/workbox/3.3.0/workbox-sw.js');
-
-if (workbox) {
-    workbox.setConfig({ modulePathPrefix: 'https://g.alicdn.com/kg/workbox/3.3.0/' });
-
-    workbox.precaching.precache(['/', '/index.html']);
-
-    workbox.routing.registerRoute(new RegExp('^https?://zhangkaiheng.gitee.io/?$'), workbox.strategies.networkFirst());
-
-    workbox.routing.registerRoute(new RegExp('.*.html'), workbox.strategies.networkFirst());
-
-    workbox.routing.registerRoute(new RegExp('.*.(?:js|css)'), workbox.strategies.staleWhileRevalidate());
-
-    workbox.routing.registerRoute(new RegExp('https://cdn.zhangkaiheng.gitee.io/'), workbox.strategies.cacheFirst());
-}
+"use strict";function asyncGeneratorStep(e,t,r,n,a,o,s){try{var c=e[o](s),u=c.value}catch(e){return void r(e)}c.done?t(u):Promise.resolve(u).then(n,a)}function _asyncToGenerator(c){return function(){var e=this,s=arguments;return new Promise(function(t,r){var n=c.apply(e,s);function a(e){asyncGeneratorStep(n,t,r,a,o,"next",e)}function o(e){asyncGeneratorStep(n,t,r,a,o,"throw",e)}a(void 0)})}}var RUNTIME="runtime";self.skipWaiting(),self.addEventListener("fetch",function(a){a.request.url.startsWith(self.location.origin)&&a.respondWith(_asyncToGenerator(regeneratorRuntime.mark(function e(){var r,t,n;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,caches.open(RUNTIME);case 2:return r=e.sent,e.next=5,r.match(a.request);case 5:return t=e.sent,n=fetch(a.request),a.waitUntil(_asyncToGenerator(regeneratorRuntime.mark(function e(){var t;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,n;case 2:return t=e.sent,e.next=5,r.put(a.request,t.clone());case 5:case"end":return e.stop()}},e)}))()),e.abrupt("return",t||n);case 9:case"end":return e.stop()}},e)}))())});
