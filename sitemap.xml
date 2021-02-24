@@ -9,20 +9,6 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/google0aa68161b98a64bb.html</loc>
-    
-    <lastmod>2021-02-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhangkh.top/baidu_verify_code-RGIGS3Sdf8.html</loc>
-    
-    <lastmod>2021-02-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhangkh.top/d3134430.html</loc>
     
     <lastmod>2021-02-24</lastmod>
@@ -284,27 +270,6 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/tags/Cloud/</loc>
-    <lastmod>2021-02-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhangkh.top/tags/%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2021-02-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhangkh.top/tags/%E5%85%B1%E4%BA%AB/</loc>
-    <lastmod>2021-02-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zhangkh.top/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2021-02-24</lastmod>
     <changefreq>daily</changefreq>
@@ -326,7 +291,21 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/tags/Hexo/</loc>
+    <loc>https://zhangkh.top/tags/Cloud/</loc>
+    <lastmod>2021-02-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhangkh.top/tags/%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2021-02-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhangkh.top/tags/%E5%85%B1%E4%BA%AB/</loc>
     <lastmod>2021-02-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -341,6 +320,13 @@
   
   <url>
     <loc>https://zhangkh.top/tags/%E9%BB%91%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2021-02-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhangkh.top/tags/Hexo/</loc>
     <lastmod>2021-02-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -433,14 +419,14 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/categories/Hexo/</loc>
+    <loc>https://zhangkh.top/categories/%E7%A0%B4%E8%A7%A3/</loc>
     <lastmod>2021-02-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zhangkh.top/categories/%E7%A0%B4%E8%A7%A3/</loc>
+    <loc>https://zhangkh.top/categories/Hexo/</loc>
     <lastmod>2021-02-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
