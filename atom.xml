@@ -6,7 +6,7 @@
   <link href="https://zhangkh.top/atom.xml" rel="self"/>
   
   <link href="https://zhangkh.top/"/>
-  <updated>2021-10-07T03:01:20.544Z</updated>
+  <updated>2021-10-07T03:02:25.008Z</updated>
   <id>https://zhangkh.top/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Smallpdf1.24.2win安装包与无限期试用安装教程</title>
     <link href="https://zhangkh.top/1659fa3e.html"/>
     <id>https://zhangkh.top/1659fa3e.html</id>
-    <published>2021-10-07T02:40:20.166Z</published>
-    <updated>2021-10-07T03:01:20.544Z</updated>
+    <published>2021-11-08T10:58:32.218Z</published>
+    <updated>2021-10-07T03:02:25.008Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Smallpdf1-24-2win安装包与无限期试用安装教程"><a href="#Smallpdf1-24-2win安装包与无限期试用安装教程" class="headerlink" title="Smallpdf1.24.2win安装包与无限期试用安装教程"></a>Smallpdf1.24.2win安装包与无限期试用安装教程</h1><h2 id="软件官网"><a href="#软件官网" class="headerlink" title="软件官网"></a>软件官网</h2><h2 id="https-smallpdf-com-cn"><a href="#https-smallpdf-com-cn" class="headerlink" title="https://smallpdf.com/cn"></a><a href="https://smallpdf.com/cn">https://smallpdf.com/cn</a></h2><h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><h2 id="安装包下载"><a href="#安装包下载" class="headerlink" title="  安装包下载"></a><img src= "/image/loading.gif" data-lazy-src="https://gitee.com/cit_k/pictures/raw/master/picture/142104hyyqrp3wzfwqvuqw.png" alt="0.png">  安装包下载</h2><p>链接：<a href="https://pan.baidu.com/s/13_r7x9YjMnAMP4jlmoGvGg">https://pan.baidu.com/s/13_r7x9YjMnAMP4jlmoGvGg</a> 提取码：vw4d 安装包大小超过100M，不能上传蓝奏云，只能上传百度网盘了，各位请见谅。  </p><h2 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h2><p> 1、打开安装包，会自动安装，安装完在左上角关闭软件（不要直接右上角关闭！因为不能完全退出）。 </p><p><img src= "/image/loading.gif" data-lazy-src="https://gitee.com/cit_k/pictures/raw/master/picture/142106yh88ejd78bkdglj2.png"></p><p>2、用记事本打开如下路径的文件，拉到最底下，把试用期5天修改为36500（100年），保存。 C:\Users\你的用户名\AppData\Roaming\Smallpdf\preferences.json</p><p><img src= "/image/loading.gif" data-lazy-src="https://gitee.com/cit_k/pictures/raw/master/picture/142108hfxaw995m8mff88m.png"></p><p>3、重新打开软件，看到顶部试用天数为36500则安装成功。 </p><p><img src= "/image/loading.gif" data-lazy-src="https://gitee.com/cit_k/pictures/raw/master/picture/142110k6yyc4bnl3y114yy.png" alt="3.png">  </p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p> 1、此软件的试用版与正式版的功能完全一致，所以只要修改试用天数即可。 </p><p>2、本安装教程参考了如下网址，不过我在反复卸载与安装实测后，对安装流程进行了简化。 <a href="https://www.52pojie.cn/thread-899911-1-1.html">https://www.52pojie.cn/thread-899911-1-1.html</a> </p><p>3、为什么提供这个安装包？因为现在官网的安装包要购买后才能下载，这个安装包是之前免费下载时保存的。 </p><p>4、此软件没有中文界面，如果有大神进行汉化就好了，虽然英文不算难，也能看得懂。</p><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
     
