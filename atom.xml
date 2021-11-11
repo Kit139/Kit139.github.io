@@ -6,7 +6,7 @@
   <link href="https://zhangkh.top/atom.xml" rel="self"/>
   
   <link href="https://zhangkh.top/"/>
-  <updated>2021-11-11T07:15:32.904Z</updated>
+  <updated>2021-11-11T06:58:26.861Z</updated>
   <id>https://zhangkh.top/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hexo框架博客编写脚本一键编写文章+博客部署</title>
-    <link href="https://zhangkh.top/df6316d8.html"/>
-    <id>https://zhangkh.top/df6316d8.html</id>
-    <published>2021-11-11T07:00:11.000Z</published>
-    <updated>2021-11-11T07:15:32.904Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo框架博客编写脚本一键编写文章-博客部署"><a href="#Hexo框架博客编写脚本一键编写文章-博客部署" class="headerlink" title="Hexo框架博客编写脚本一键编写文章+博客部署"></a>Hexo框架博客编写脚本一键编写文章+博客部署</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>经常打开终端敲代码上传文章到博客，重复性工作嘛，写个脚本吧</p><h2 id="CONTENT"><a href="#CONTENT" class="headerlink" title="CONTENT"></a>CONTENT</h2><ol><li><p>编写写作脚本（因为是win端环境，所以文件格式为.bat）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">cd C:\Users\kit\Desktop\zhangkaiheng_hexoblog</span><br><span class="line">set &#x2F;p name&#x3D;</span><br><span class="line">set address&#x3D;C:\Users\kit\Desktop\zhangkaiheng_hexoblog\source\_posts\%name%.md</span><br><span class="line">hexo new %name%&amp;&amp;start %address%</span><br></pre></td></tr></table></figure><p>注意最后一行创建md文件和打开md文件命令都要在一行并用&amp;&amp;隔开否则只会执行一项命令就退出终端了</p></li><li><p>编写博客部署脚本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">@REM cd &#x2F;c&#x2F;Users&#x2F;kit&#x2F;Desktop&#x2F;zhangkaiheng_hexoblog</span><br><span class="line">cd C:\Users\kit\Desktop\zhangkaiheng_hexoblog</span><br><span class="line">hexo clean&amp;&amp;hexo g&amp;&amp;gulp&amp;&amp;hexo d</span><br></pre></td></tr></table></figure><p>最后一行同理也是</p></li><li><p>mac端部署脚本如下（文件格式为.sh）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line">echo &quot;Start&quot;</span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">gulp</span><br><span class="line">hexo deploy</span><br><span class="line">echo &quot;Finish&quot;</span><br><span class="line">echo 按任意键继续</span><br><span class="line">read -n 1</span><br></pre></td></tr></table></figure></li><li><p>我们把脚本放到博客文件夹目录里，并发送快捷方式到桌面，以后写文章或者发文章就可以一键开始了，是不是很方便呢</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111111514902.png" alt="image-20211111151157315"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111111512095.png" alt="image-20211111151232181"></p></li></ol><h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2><p>一次配置，一直方便</p><p>参考文章：</p><ul><li><a href="https://blog.csdn.net/Jack_lzx/article/details/115333369">编写BAT脚本实现Hexo一键部署</a></li><li><a href="https://www.zdynb.cn/2021/hexo-yi-jian-chuang-jian-ji-bu-shu-jiao-ben.html">hexo一键创建及部署脚本 | 张登友的博客</a></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Hexo框架博客编写脚本一键编写文章-博客部署&quot;&gt;&lt;a href=&quot;#Hexo框架博客编写脚本一键编写文章-博客部署&quot; class=&quot;headerlink&quot; title=&quot;Hexo框架博客编写脚本一键编写文章+博客部署&quot;&gt;&lt;/a&gt;Hexo框架博客编写脚本一键编写文</summary>
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://zhangkh.top/categories/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://zhangkh.top/tags/Hexo/"/>
-    
-  </entry>
   
   <entry>
     <title>Hexo框架Blog不同平台移植</title>
@@ -259,6 +235,30 @@
     
     
     <category term="FFmpeg" scheme="https://zhangkh.top/tags/FFmpeg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vercel加速GitHub Pages</title>
+    <link href="https://zhangkh.top/d746f3f.html"/>
+    <id>https://zhangkh.top/d746f3f.html</id>
+    <published>2021-03-01T04:05:37.000Z</published>
+    <updated>2021-03-01T04:05:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Vercel加速GitHub-Pages"><a href="#Vercel加速GitHub-Pages" class="headerlink" title="Vercel加速GitHub Pages"></a>Vercel加速GitHub Pages</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>CloudFlare加速Github Page国内延迟和速度不是最优的，碰巧了解到Vercel也能加速Github Pages，效果还更好，故在此进行记录总结。</p><h2 id="Vercel是什么"><a href="#Vercel是什么" class="headerlink" title="Vercel是什么"></a>Vercel是什么</h2><p>前身是Zeit now（电信线路极为优秀），后改名改名为 Vercel了（好像被收购了）。相比于Netlify，Vercel（下文全都用此名称）CDN分布广、免费功能较为齐全（Vercel免费用户提供每个月100GB的流量，跟Github Pages是一样的）、在中国大陆访问站点在台湾速度快以及有命令行程序CLI等，但缺点也有许多：不能像Netlify那样插入代码等。但对于我的博客实在够用了，话不多说，开干！！！</p><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul><li>Github Pages博客</li><li>域名</li><li>电子邮箱（最好谷歌邮箱，QQ邮箱有部分人反应会出错）</li></ul><h2 id="注册Vercel账号"><a href="#注册Vercel账号" class="headerlink" title="注册Vercel账号"></a>注册Vercel账号</h2><p>在<a href="https://zeit.co/">Vercel官方网站</a>用准备好的邮箱注册一个账号，可以用Github/Gitlab登陆，然后点击Sign Up注册一个账号或者点击Login登录。<br><img src="https://gitee.com/cit_k/pictures/raw/master/picture/format,png.png" alt="在这里插入图片描述"></p><h2 id="导入仓库"><a href="#导入仓库" class="headerlink" title="导入仓库"></a>导入仓库</h2><p>点击<a href="https://vercel.com/dashboard">New Project</a>进入给予github权限选择github账户下的你的博客仓库。</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210301170211828.png" alt="image-20210301170211828"></p><h2 id="部署及域名绑定"><a href="#部署及域名绑定" class="headerlink" title="部署及域名绑定"></a>部署及域名绑定</h2><p>导入之后会发现它已经分配给你一个.verel.app的域名，此时我们只需在上面的输入框输入自己的域名点击add后按照提示绑定就行</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210301171704544.png" alt="image-20210301171704544"></p><h2 id="部署后"><a href="#部署后" class="headerlink" title="部署后"></a>部署后</h2><p>ping一下，几乎都是绿的</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210301172647731.png" alt="image-20210301172647731"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>挺不错的，暂时用它了！</p><p>参考：</p><ul><li><a href="https://www.tangruiping.com/post/zeit-github-pages-hexo-sync.html#Zeit-Github-Cloudflare-Netlify%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94">Vercel Zeit now自动部署Github为hexo博客加速</a></li><li><a href="https://www.iaia.cc/posts/2418998582.html">优雅的使用Vercel加速GitHub Pages</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Vercel加速GitHub-Pages&quot;&gt;&lt;a href=&quot;#Vercel加速GitHub-Pages&quot; class=&quot;headerlink&quot; title=&quot;Vercel加速GitHub Pages&quot;&gt;&lt;/a&gt;Vercel加速GitHub Pages&lt;/h1&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://zhangkh.top/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zhangkh.top/tags/Hexo/"/>
     
   </entry>
   
