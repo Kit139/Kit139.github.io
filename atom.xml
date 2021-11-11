@@ -6,7 +6,7 @@
   <link href="https://zhangkh.top/atom.xml" rel="self"/>
   
   <link href="https://zhangkh.top/"/>
-  <updated>2021-11-10T17:27:31.584Z</updated>
+  <updated>2021-11-11T06:58:17.009Z</updated>
   <id>https://zhangkh.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo框架Blog不同平台移植</title>
+    <link href="https://zhangkh.top/cec18dd8.html"/>
+    <id>https://zhangkh.top/cec18dd8.html</id>
+    <published>2021-11-11T06:37:50.000Z</published>
+    <updated>2021-11-11T06:58:17.009Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo框架Blog不同平台移植"><a href="#Hexo框架Blog不同平台移植" class="headerlink" title="Hexo框架Blog不同平台移植"></a>Hexo框架Blog不同平台移植</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>这不是打算把win10_LTSC系统为主力嘛，就从Mac端一直到win吧</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111111457056.png" alt="image-20211111145744740"></p><h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><ol><li><p>配置Git环境（略）</p></li><li><p>配置node环境</p><p>下载<a href="http://nodejs.cn/download/">node</a>傻瓜式安装，然后换淘宝镜像</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br><span class="line">npm root -g</span><br></pre></td></tr></table></figure><p>node安装hexo框架</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure><p>切换到blog文件夹，安装hexo插件（注：因为之前的本地hexo安装都是本地而不是全局所以只需安装全局的就行）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd zhangkaiheng_hexoblog</span><br><span class="line">cnpm install --global gulp-cli</span><br><span class="line">cnpm install gulp --save</span><br></pre></td></tr></table></figure></li><li><p>正常写文章后，本地上传即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd C:\Users\kit\Desktop\zhangkaiheng_hexoblog</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">gulp</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2></li></ol><p>移植后一定要检查一下博客是不是有一些插件没安装好</p><p>参考文章：</p><ul><li><a href="https://zhangkaiheng.gitee.io/1640c2dd.html">第一篇 Hexo blog 文章 ——Hexo + Gitee 部署个人博客</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Hexo框架Blog不同平台移植&quot;&gt;&lt;a href=&quot;#Hexo框架Blog不同平台移植&quot; class=&quot;headerlink&quot; title=&quot;Hexo框架Blog不同平台移植&quot;&gt;&lt;/a&gt;Hexo框架Blog不同平台移植&lt;/h1&gt;&lt;h2 id=&quot;背景&quot;&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://zhangkh.top/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zhangkh.top/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Git多账号配置WIN10版</title>
@@ -227,30 +251,6 @@
       
       
     <summary type="html">&lt;h1 id=&quot;Vercel加速GitHub-Pages&quot;&gt;&lt;a href=&quot;#Vercel加速GitHub-Pages&quot; class=&quot;headerlink&quot; title=&quot;Vercel加速GitHub Pages&quot;&gt;&lt;/a&gt;Vercel加速GitHub Pages&lt;/h1&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://zhangkh.top/categories/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://zhangkh.top/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Namesilo购买解析域名+CloudFlare加速Github Page</title>
-    <link href="https://zhangkh.top/a10d2364.html"/>
-    <id>https://zhangkh.top/a10d2364.html</id>
-    <published>2021-02-25T04:05:37.000Z</published>
-    <updated>2021-02-25T04:05:37.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Namesilo购买解析域名-CloudFlare加速Github-Page"><a href="#Namesilo购买解析域名-CloudFlare加速Github-Page" class="headerlink" title="Namesilo购买解析域名+CloudFlare加速Github Page"></a>Namesilo购买解析域名+CloudFlare加速Github Page</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在gitee、github双部署后，github pages国内速度太慢，有点强迫症，就套一层 cloudflare CDN加速github page（需要域名，免费版本是有请求次数限制的，每天 10W 次，博客足够了；哪天官方不提供免费套餐了，把 DNS 的 NS 解析记录回去就行）。可又没有域名，无奈，就花点小钱买来玩玩吧。</p><h2 id="域名选择"><a href="#域名选择" class="headerlink" title="域名选择"></a>域名选择</h2><p><strong>如果准备买国内服务器，建议在阿里云或者腾讯云购买域名，虽然要实名认证，但是国内服务器本身也要备案</strong>。如果是准备购买国外服务器，建议在 Namesilo 购买域名。千万 千万 不要在 Godaddy 购买域名，这是个坑！！</p><h2 id="Namesilo"><a href="#Namesilo" class="headerlink" title="Namesilo"></a>Namesilo</h2><p>如果有优惠码，价格不错，虽说可能没 Godaddy 便宜，但是至少比国内域名便宜，而且 Godaddy 的便宜是有代价的。最后域名本身也不贵，也没必要在乎十多块钱的差价。主要还是体验，Namesilo 续费不会留坑，隐私保护的好，Godaddy 如果用信用卡付款，还会被抽到验证身份，这是最坑的，可能需要上传身份证照片，贼恶心。</p><h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>namesilo注册视频的话可以看<a href="https://www.bilibili.com/video/BV11E411L7AA?from=search&seid=15025364950076604501">这个</a></p><p>总之邮箱注册+身份填写+域名搜索+选择购买下单，很简单。其中这一步要留意</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/2-2.png" alt="《2019 Namesilo 购买域名 解析域名 图文教程》"></p><p>这里内容比较多，最为重要。第一个箭头和我一样即可。第二个箭头位置 Auto-Renew，设置域名是否自动续费，自行确定，支付宝不虚。第三个箭头位置 Privacy Setting 代表域名隐私保护设置，建议设置成 WHOIS Privacy ，反正是免费的。第四个箭头代表 购买几年。使用优惠码好像第一次只能一年。。。最后箭头代表优惠码，如果填写优惠码会便宜 1 美元。本来我这里是 $6.99 ，优惠会是 $5.99。</p><h2 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h2><p>通过域名提供商，修改刚刚的域名解析，通过 A 记录分别解析到以下 4 个 IP：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">185.199.108.153</span><br><span class="line">185.199.109.153</span><br><span class="line">185.199.110.153</span><br><span class="line">185.199.111.153</span><br></pre></td></tr></table></figure><p>比如我的：</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210224195345660.png" alt="image-20210224195345660"></p><p>设置完之后通过命令行验证：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dig monkeywie.cn +noall +answer</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210224184654805.png" alt="image-20210224184654805"></p><p>如果ip是上面的就代表已经生效了。当记录全部解析生效时，就可以通过<code>http://zhangkh.top</code>访问到博客了，这个时候再开启<code>HTTPS</code>，示例图：</p><p><img src="https://monkeywie.cn/2020/08/20/fast-github-page-with-cloudflare/2020-08-20-18-24-13.png" alt="img"></p><p>然后 github 会自动签发提供给<code>zhangkh.top</code>域名使用的 SSL 证书，等待一段时间后，就可以通过<code>HTTPS</code>即<code>https://zhangkh.top</code>访问博客了。</p><h3 id="CloudFlare-CDN配置"><a href="#CloudFlare-CDN配置" class="headerlink" title="CloudFlare CDN配置"></a>CloudFlare CDN配置</h3><p>先通过<a href="https://dash.cloudflare.com/sign-up%E9%93%BE%E6%8E%A5%E8%BF%9B%E8%A1%8C%E6%B3%A8%E5%86%8C%EF%BC%8C%E7%84%B6%E5%90%8E%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9%EF%BC%88%E6%B3%A8%E6%84%8F%E6%98%AF%E5%A1%AB%E5%86%99%E5%9F%9F%E5%90%8D%EF%BC%89%EF%BC%8C%E6%8F%90%E4%BA%A4%E4%B9%8B%E5%90%8E%E4%BC%9A%E8%87%AA%E5%8A%A8%E6%89%AB%E6%8F%8F%E5%9F%9F%E5%90%8D%E5%AF%B9%E5%BA%94%E7%9A%84%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95%EF%BC%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%B0%B1%E6%98%AF%E6%BF%80%E6%B4%BB%E4%BA%86%EF%BC%9A%E9%80%9A%E8%BF%87%E5%9F%9F%E5%90%8D%E7%9A%84%E8%BF%90%E8%90%A5%E5%95%86%E4%BF%AE%E6%94%B9%E5%AF%B9%E5%BA%94%E7%9A%84">https://dash.cloudflare.com/sign-up链接进行注册，然后添加站点（注意是填写域名），提交之后会自动扫描域名对应的解析记录，下一步就是激活了：通过域名的运营商修改对应的</a> NS 记录</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210224174816363.png" alt="image-20210224174816363"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210224174902676.png" alt="image-20210224174902676"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210224175004015.png" alt="image-20210224175004015"></p><p>反正都免费，能开的都开</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210224175126008.png" alt="image-20210224175126008"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210224175215210.png" alt="image-20210224175215210"></p><p>这样就设置完毕了，等一段时间再用命令行验证一下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dig monkeywie.cn +noall +answer</span><br></pre></td></tr></table></figure><p>例如我的</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210224185800492.png" alt="image-20210224185800492"></p><p>可以看到 dns 解析的 ip 已经变了，已经被 cloudflare 接管了，<br>然后清除下浏览器 DNS 缓存，chrome 浏览器输入<code>chrome://net-internals/#dns</code>进入清除页：</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/2020-08-20-18-41-14.png" alt="img"></p><p>再次访问<code>https://monkeywie.cn</code>，F12 打开网络面板可以看到已经用上了 CDN 了：</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-2021022419buibl8404%202.png" alt="image-2021022419buibl8404 2"></p><p>参考：</p><ul><li><a href="https://guozh.net/buy-domain-name-from-namesilo-course/">2019 Namesilo 购买域名 解析域名 图文教程</a></li><li><a href="https://monkeywie.cn/2020/08/20/fast-github-page-with-cloudflare/">使用cloudflare免费加速github page</a></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Namesilo购买解析域名-CloudFlare加速Github-Page&quot;&gt;&lt;a href=&quot;#Namesilo购买解析域名-CloudFlare加速Github-Page&quot; class=&quot;headerlink&quot; title=&quot;Namesilo购买解析域名+C</summary>
       
     
     
