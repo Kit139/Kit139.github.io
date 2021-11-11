@@ -6,7 +6,7 @@
   <link href="https://zhangkh.top/atom.xml" rel="self"/>
   
   <link href="https://zhangkh.top/"/>
-  <updated>2021-11-11T06:58:26.861Z</updated>
+  <updated>2021-11-11T18:01:20.750Z</updated>
   <id>https://zhangkh.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>miniconda+vscode+aixcoder+git配置</title>
+    <link href="https://zhangkh.top/c7abe168.html"/>
+    <id>https://zhangkh.top/c7abe168.html</id>
+    <published>2021-11-11T17:01:43.000Z</published>
+    <updated>2021-11-11T18:01:20.750Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="miniconda-vscode-aixcoder-git配置"><a href="#miniconda-vscode-aixcoder-git配置" class="headerlink" title="miniconda+vscode+aixcoder+git配置"></a>miniconda+vscode+aixcoder+git配置</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>用了好多Pyhton环境和编辑器，觉得还是miniconda+vscode+aixcoder+git小巧灵活高效，故在此分享一下</p><h2 id="CONTENT"><a href="#CONTENT" class="headerlink" title="CONTENT"></a>CONTENT</h2><ol><li><p>应付二级python考试，下载<a href="http://ncre.neea.edu.cn/html1/report/1807/2866-1.htm">python</a>，建议先按照后面的配置学Python然后学有所得考前配置一下备考考完删除</p></li><li><p>在清华镜像下载<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/?C=M&O=A">minconda</a>，傻瓜式安装（注意勾选add to path）</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111120111556.png" alt="image-20211112011124535"></p></li><li><p>官网下载相应版本<a href="https://code.visualstudio.com/Download">VScode</a>，傻瓜式安装</p></li><li><p>配置vscode插件，安装python自推荐插件、aixcoder、coderunner等插件（见视频）</p></li><li><p>官网下载相应版本<a href="https://git-scm.com/downloads">Git</a>，上<a href="https://gitee.com/">Gitee</a>用邮箱手机注册，用户名设置需谨慎禁止胡乱其不然你会后悔的</p></li><li><p>电脑配置git账号，保证以后代码上传到gitee身份认证正确</p><p>格式为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email “邮箱”</span><br><span class="line">git config --global user.name &quot;用户名&quot;</span><br></pre></td></tr></table></figure><p>比如我的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email “2514154656@qq.com”</span><br><span class="line">git config --global user.name &quot;zhangkaiheng&quot;</span><br></pre></td></tr></table></figure></li><li><p>第一次上传代码，需要登录<a href="https://gitee.com/">Gitee</a>新建仓库，然后将仓库地址用vscode克隆到本地，就可以在本地仓库代码文件夹里码代码了，码完后上传再输入账户和密码，以录入windows凭证，后面除非切换账户就不用动了。</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111120127975.png" alt="image-20211112012748458"></p></li><li><p>下面嵌入的视频有点卡还不清晰，具体细节看B站的回放吧——&gt;<a href="https://www.bilibili.com/video/BV1o44y1e77C/">miniconda+vscode+aixcoder+git配置</a></p><iframe src="//player.bilibili.com/player.html?aid=976666675&bvid=BV1o44y1e77C&cid=440596946&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="box-sizing: border-box; outline: 0px; margin: 0px; padding: 0px; font-weight: normal; overflow-wrap: break-word; display: block; width: 100%; height:  660px;"> </iframe></li></ol><h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2><p>总的来说，相较于Python的简陋、anaconda的功能“全面”大碗饭但比较笨重而且现在商业限制了、Pycharm功能丰富但也是笨重每次打开新项目需要长时间加载且有付费版本，miniconda就显得小巧功能可自行配置，vscode瑞士军刀丰富插件个人自由度高，再配上aixcoder大数据算法代码提示简直无敌！并且以后我们未必只学Python一门编程语言，想我C、R、JAVA都可以在vscode中进行码代码所以vscode瑞士军刀是真的牛！但是还是要说但是了，这些都只是工具，我们不要忘记自己的初心，高效和代码成果才是一切。</p><p>最后有人说git咱经管人为啥要学，害，现在优秀的脚本呀、轮子呀还有项目呀甚至是考研资料、电子书、优秀软件都可以在Github、Gitee还有coding等git类中找到，你总的会找资源吧，还有一点就是，每次写完一个项目代码上传到gitee或者github然后删除本地代码，你会有一种豁然开朗的成就感。</p><p>参考文章：</p><ul><li><a href="https://www.bilibili.com/video/BV1et4y1S7EJ?from=search&seid=649068464216974432&spm_id_from=333.337.0.0">Windows下<em>VSCode</em>和<em>MiniConda</em>轻量环境配置</a></li><li><a href="https://zhuanlan.zhihu.com/p/404793094">miniconda+vscode环境搭建（初学） - 知乎</a></li><li><a href="https://blog.csdn.net/herocheney/article/details/117739319">【深度学习】WIN10+VSCode+Miniconda+pytorch环境安装</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;miniconda-vscode-aixcoder-git配置&quot;&gt;&lt;a href=&quot;#miniconda-vscode-aixcoder-git配置&quot; class=&quot;headerlink&quot; title=&quot;miniconda+vscode+aixcoder+git配</summary>
+      
+    
+    
+    
+    <category term="Python" scheme="https://zhangkh.top/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://zhangkh.top/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo框架Blog不同平台移植</title>
@@ -235,30 +259,6 @@
     
     
     <category term="FFmpeg" scheme="https://zhangkh.top/tags/FFmpeg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vercel加速GitHub Pages</title>
-    <link href="https://zhangkh.top/d746f3f.html"/>
-    <id>https://zhangkh.top/d746f3f.html</id>
-    <published>2021-03-01T04:05:37.000Z</published>
-    <updated>2021-03-01T04:05:37.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Vercel加速GitHub-Pages"><a href="#Vercel加速GitHub-Pages" class="headerlink" title="Vercel加速GitHub Pages"></a>Vercel加速GitHub Pages</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>CloudFlare加速Github Page国内延迟和速度不是最优的，碰巧了解到Vercel也能加速Github Pages，效果还更好，故在此进行记录总结。</p><h2 id="Vercel是什么"><a href="#Vercel是什么" class="headerlink" title="Vercel是什么"></a>Vercel是什么</h2><p>前身是Zeit now（电信线路极为优秀），后改名改名为 Vercel了（好像被收购了）。相比于Netlify，Vercel（下文全都用此名称）CDN分布广、免费功能较为齐全（Vercel免费用户提供每个月100GB的流量，跟Github Pages是一样的）、在中国大陆访问站点在台湾速度快以及有命令行程序CLI等，但缺点也有许多：不能像Netlify那样插入代码等。但对于我的博客实在够用了，话不多说，开干！！！</p><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul><li>Github Pages博客</li><li>域名</li><li>电子邮箱（最好谷歌邮箱，QQ邮箱有部分人反应会出错）</li></ul><h2 id="注册Vercel账号"><a href="#注册Vercel账号" class="headerlink" title="注册Vercel账号"></a>注册Vercel账号</h2><p>在<a href="https://zeit.co/">Vercel官方网站</a>用准备好的邮箱注册一个账号，可以用Github/Gitlab登陆，然后点击Sign Up注册一个账号或者点击Login登录。<br><img src="https://gitee.com/cit_k/pictures/raw/master/picture/format,png.png" alt="在这里插入图片描述"></p><h2 id="导入仓库"><a href="#导入仓库" class="headerlink" title="导入仓库"></a>导入仓库</h2><p>点击<a href="https://vercel.com/dashboard">New Project</a>进入给予github权限选择github账户下的你的博客仓库。</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210301170211828.png" alt="image-20210301170211828"></p><h2 id="部署及域名绑定"><a href="#部署及域名绑定" class="headerlink" title="部署及域名绑定"></a>部署及域名绑定</h2><p>导入之后会发现它已经分配给你一个.verel.app的域名，此时我们只需在上面的输入框输入自己的域名点击add后按照提示绑定就行</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210301171704544.png" alt="image-20210301171704544"></p><h2 id="部署后"><a href="#部署后" class="headerlink" title="部署后"></a>部署后</h2><p>ping一下，几乎都是绿的</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210301172647731.png" alt="image-20210301172647731"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>挺不错的，暂时用它了！</p><p>参考：</p><ul><li><a href="https://www.tangruiping.com/post/zeit-github-pages-hexo-sync.html#Zeit-Github-Cloudflare-Netlify%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94">Vercel Zeit now自动部署Github为hexo博客加速</a></li><li><a href="https://www.iaia.cc/posts/2418998582.html">优雅的使用Vercel加速GitHub Pages</a></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Vercel加速GitHub-Pages&quot;&gt;&lt;a href=&quot;#Vercel加速GitHub-Pages&quot; class=&quot;headerlink&quot; title=&quot;Vercel加速GitHub Pages&quot;&gt;&lt;/a&gt;Vercel加速GitHub Pages&lt;/h1&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://zhangkh.top/categories/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://zhangkh.top/tags/Hexo/"/>
     
   </entry>
   
