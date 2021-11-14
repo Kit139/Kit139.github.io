@@ -396,14 +396,14 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/tags/GIT/</loc>
+    <loc>https://zhangkh.top/tags/%E7%A0%B4%E8%A7%A3/</loc>
     <lastmod>2021-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zhangkh.top/tags/Hexo/</loc>
+    <loc>https://zhangkh.top/tags/%E9%BB%91%E7%A7%91%E6%8A%80/</loc>
     <lastmod>2021-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -431,14 +431,14 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/tags/%E7%A0%B4%E8%A7%A3/</loc>
+    <loc>https://zhangkh.top/tags/GIT/</loc>
     <lastmod>2021-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zhangkh.top/tags/%E9%BB%91%E7%A7%91%E6%8A%80/</loc>
+    <loc>https://zhangkh.top/tags/Hexo/</loc>
     <lastmod>2021-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -543,14 +543,14 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/tags/%E5%A4%9A%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://zhangkh.top/tags/%E5%9B%BE%E6%A0%87/</loc>
     <lastmod>2021-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zhangkh.top/tags/%E5%9B%BE%E6%A0%87/</loc>
+    <loc>https://zhangkh.top/tags/%E5%A4%9A%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2021-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -566,14 +566,7 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/categories/GIT/</loc>
-    <lastmod>2021-11-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhangkh.top/categories/Hexo/</loc>
+    <loc>https://zhangkh.top/categories/%E7%A0%B4%E8%A7%A3/</loc>
     <lastmod>2021-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -587,7 +580,14 @@
   </url>
   
   <url>
-    <loc>https://zhangkh.top/categories/%E7%A0%B4%E8%A7%A3/</loc>
+    <loc>https://zhangkh.top/categories/GIT/</loc>
+    <lastmod>2021-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhangkh.top/categories/Hexo/</loc>
     <lastmod>2021-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
