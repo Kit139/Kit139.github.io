@@ -6,7 +6,7 @@
   <link href="https://zhangkh.top/atom.xml" rel="self"/>
   
   <link href="https://zhangkh.top/"/>
-  <updated>2021-11-11T18:01:50.126Z</updated>
+  <updated>2021-11-14T09:19:23.040Z</updated>
   <id>https://zhangkh.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>石河子大学网络教育平台ppt不限制批量下载pdf</title>
+    <link href="https://zhangkh.top/c29e6364.html"/>
+    <id>https://zhangkh.top/c29e6364.html</id>
+    <published>2021-11-14T08:45:27.000Z</published>
+    <updated>2021-11-14T09:19:23.040Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="石河子大学网络教育平台ppt不限制批量下载pdf"><a href="#石河子大学网络教育平台ppt不限制批量下载pdf" class="headerlink" title="石河子大学网络教育平台ppt不限制批量下载pdf"></a>石河子大学网络教育平台ppt不限制批量下载pdf</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>这不是老有些朋友让把学校网络教育平台的老师在线课件下载下来，闲时就整理下思路，写好代码并且封装成软件，下次再出现这种事就简单了</p><h2 id="CONTENT"><a href="#CONTENT" class="headerlink" title="CONTENT"></a>CONTENT</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>石河子大学网络教育平台ppt不限制批量下载pdf</p><p><strong>注意！！！</strong></p><p><strong>本程序会获取你的账户信息，网上ppt都为石大老师精心编排，特别是只让在线看的，仅供学习交流用完资料请删除，切勿牟利传播</strong></p><p><strong>本程序会获取你的账户信息，网上ppt都为石大老师精心编排，特别是只让在线看的，仅供学习交流用完资料请删除，切勿牟利传播</strong></p><p><strong>本程序会获取你的账户信息，网上ppt都为石大老师精心编排，特别是只让在线看的，仅供学习交流用完资料请删除，切勿牟利传播</strong></p><p>用户只用获取ppt列表页面链接和输入账户信息Cookies即可不限制批量下载pdf课件</p><h3 id="下载代码或者软件"><a href="#下载代码或者软件" class="headerlink" title="下载代码或者软件"></a>下载代码或者软件</h3><ol><li><a href="https://gitee.com/zhangkaiheng/shzu_eol_down_pdf">代码</a></li><li><a href="https://gitee.com/zhangkaiheng/shzu_eol_down_pdf/releases/1.0">exe软件</a></li></ol><h3 id="获取ppt列表页面链接和账户信息Cookies"><a href="#获取ppt列表页面链接和账户信息Cookies" class="headerlink" title="获取ppt列表页面链接和账户信息Cookies"></a>获取ppt列表页面链接和账户信息Cookies</h3><ol><li><p>登录网络教育平台——选择课程进入——课程资源找到ppt页面按钮</p></li><li><p>右键在新标签页打开</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111141306461.png" alt="image-20211114130655487"></p></li><li><p>在新的页面右键检查或者直接F12后，点击网络-文档-清理图标-刷新网页</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111141308319.png" alt="image-20211114130853986"></p></li><li><p>网页地址栏链接即ppt列表页面链接，再点击唯一的文档会出现详情页面，找到Cookie后面的右键复制值即可得到账户信息Cookies</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111141314768.png" alt="image-20211114131441104"></p></li></ol><h3 id="运行PY文件或exe软件"><a href="#运行PY文件或exe软件" class="headerlink" title="运行PY文件或exe软件"></a>运行PY文件或exe软件</h3><ol><li>如果你有Python环境就可以直接运行.py文件</li><li>如果没有就下载发行版的.exe文件在本地运行然后根据提示粘贴上面获取到的链接和Cookies</li></ol><h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2><p>总的来说，爬虫就是可见即可爬，就是通过网页抓包链接来抓取数据嘛</p><p>后期有闲情时再做个用户界面吧</p><p>参考文章：</p><ul><li>无</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;石河子大学网络教育平台ppt不限制批量下载pdf&quot;&gt;&lt;a href=&quot;#石河子大学网络教育平台ppt不限制批量下载pdf&quot; class=&quot;headerlink&quot; title=&quot;石河子大学网络教育平台ppt不限制批量下载pdf&quot;&gt;&lt;/a&gt;石河子大学网络教育平台ppt</summary>
+      
+    
+    
+    
+    <category term="Python" scheme="https://zhangkh.top/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://zhangkh.top/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>miniconda+vscode+aixcoder+git配置</title>
@@ -233,32 +257,6 @@
     
     
     <category term="黑苹果" scheme="https://zhangkh.top/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MATLAB R2020b官方v9.8.0Mac/Win原版及安装激活教程</title>
-    <link href="https://zhangkh.top/6933ffae.html"/>
-    <id>https://zhangkh.top/6933ffae.html</id>
-    <published>2021-03-06T12:05:37.000Z</published>
-    <updated>2021-03-06T12:05:37.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="MATLAB-R2020b官方v9-8-0Mac-Win原版及安装激活教程"><a href="#MATLAB-R2020b官方v9-8-0Mac-Win原版及安装激活教程" class="headerlink" title="MATLAB R2020b官方v9.8.0Mac/Win原版及安装激活教程"></a>MATLAB R2020b官方v9.8.0Mac/Win原版及安装激活教程</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>MathWorks MATLAB R2020a v9.8.0.1323502 x64 最新版已经更新;Matlab是matrix&amp;laboratory两个词的组合，意为矩阵工厂（矩阵实验室）。是由美国mathworks公司发布的主要面对科学计算、可视化以及交互式程序设计的高科技计算环境。它将数值分析、矩阵计算、科学数据可视化以及非线性动态系统的建模和仿真等诸多强大功能集成在一个易于使用的视窗环境中，为科学研究、工程设计以及必须进行有效数值计算的众多科学领域提供了一种全面的解决方案，并在很大程度上摆脱了传统非交互式程序设计语言（如C、Fortran）的编辑模式，代表了当今国际科学计算软件的先进水平。<br> MATLAB和Mathematica、Maple并称为三大数学软件。它在数学类科技应用软件中在数值计算方面首屈一指。MATLAB可以进行矩阵运算、绘制函数和数据、实现算法、创建用户界面、连接其他编程语言的程序等，主要应用于工程计算、控制设计、信号处理与通讯、图像处理、信号检测、金融建模设计与分析等领域。</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/E73OEnn4aq6kajdTgg90dxIKjvgp4CMI.png" alt="img"></p><h2 id="Mac环境安装"><a href="#Mac环境安装" class="headerlink" title="Mac环境安装"></a>Mac环境安装</h2><h3 id="Mac版Matlab-R2020b下载"><a href="#Mac版Matlab-R2020b下载" class="headerlink" title="Mac版Matlab R2020b下载"></a>Mac版Matlab R2020b下载</h3><p><a href="https://citpan.herokuapp.com/CITpan/CIT%E5%B0%8F%E7%BB%84%E8%B5%84%E6%BA%90/MatLab/">不限速下载链接</a>，建议NDM等多线程下载，可达到最佳速度</p><h3 id="Mac安装过程"><a href="#Mac安装过程" class="headerlink" title="Mac安装过程"></a>Mac安装过程</h3><p>Mac版本安装包极大,如果出现错误请先对比MD5码;</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_e0DVNgGgBV.png" alt="img"></p><p> 1.先断网！之后打开安装包,双击InstallForMacOSX开始安装;(文件太大,安装程序启动很慢,耐心等待) </p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_sMyZ9HlHoo.png" alt="img"></p><p> 2.同意一些协之后输入安装Key:<code>09806-07443-53955-64350-21751-41297</code></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_kjyvnpdFgy.png" alt="img"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_rKaAfFvf03.png" alt="img"></p><p>3.提示选择许可证，解压Matlabr2020_Mac_Patch.zip文件,得到Crack文件夹,选择其中的<code>license_standalone.lic</code>许可证文件,点击下一步;选择安装位置,默认下一步即可</p><p><img src="https://img2.macxin.com/images/2020/04/16/vVJ7BKGuwc.gif"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/%E6%88%AA%E5%B1%8F2021-03-04%2001.55.44.png"></p><p>4.选择要安装的组件,自己选择,如果全选也可以,就是安装时间较长;点击下一步开始安装过程,大概半小时左右可以安装完成;(视磁盘性能而定)</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_JTFrGviXk9.png"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_3UOorU2m69.png"></p><p> 5.安装完成后,拷贝Crack文件夹中的<code>libmwlmgrimpl.dylib</code>文件到目录<code>/applications/Polyspace/r2020a/bin/maci64/matlab_startup_plugins/lmgrimpl/</code>替换同名文件即可;</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_rEXwPA4h2U.png"></p><p> 6.完成了;关于启动程序,在路径<code>/applications/Polyspace/r2020a/bin/maci64/MATLABWindow</code>中,右键新建一个替身拖到桌面即可;</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_7OV80PvUHt.png"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/7XCnOGx4Nq.gif"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_MOtBJE1B9b.png"></p><h2 id="Win安装过程"><a href="#Win安装过程" class="headerlink" title="Win安装过程"></a>Win安装过程</h2><h3 id="下载安装包"><a href="#下载安装包" class="headerlink" title="下载安装包"></a>下载安装包</h3><p>如果没有毒盘VIP或者一定手段，不建议用下面链接（由于文件太大手机能打开，电脑网页端等会显示404）</p><p>链接：<a href="https://pan.baidu.com/s/1QFnBlCFjIfOh8ggEudtZXQ">https://pan.baidu.com/s/1QFnBlCFjIfOh8ggEudtZXQ</a> 提取码：sx6r</p><p>建议用下面👇链接</p><p><a href="https://zuaazjueducn-my.sharepoint.com/:f:/g/personal/zy2018_zuaa_zju_edu_cn/EicaBPZ5-uJEjwXrW3w98msBGWFXbT1SUhXVSdIrwRMh2w?e=KBYkCP">Onedrive链接</a>，密码：2020，解压密码：<a href="http://www.macxin.com/">www.macxin.com</a></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210306025815946.png" alt="image-20210306025815946"></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1.断网,右击ISO镜像文件选择挂载(我用了2019的图演示,道理是一样的)这个时候计算机里就会出现一个虚拟光驱,右击打开虚拟光驱之后进入bin文件夹,选择以管理员身份运行Setup.exe启动安装程序(如动图<br><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210306024702234.png" alt="image-20210306024702234"><br> 2.同意一些协议之类的,之后输入安装Key:<code>09806-07443-53955-64350-21751-41297</code><strong>注意:这个时候你的电脑一定要断网!</strong></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_rNaSGia6eR.png"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_JMPDcASpx4.png"></p><p>3.之后会提示让你选择许可证,解压下载的<code>Matlab R2020a Win64 Crack.zip</code>文件,选择里面的<code>icense_standalone.lic</code>文件,点击下一步,之后选择要安装的位置,安装大概需要30G+的硬盘空间;之后选择安装组件,推荐勾掉第一个Server组件,其他的自己选择就行了,之后就是漫长的等待安装完成;(如图<br> <img src="https://img2.macxin.com/images/2020/03/26/9Ob37kWPRb.gif" alt="img"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/mstsc_0a0JTvJrF4.png"></p><p>4.软件激活,替换文件,打开解压好的<code>Matlab R2020a Win64 Crack</code>文件夹复制里面的R2020a文件夹,替换到软件安装目录{如图</p><p><img src="https://img2.macxin.com/images/2020/03/26/RSbCluaTTv.gif"></p><p>5.创建快捷方式,默认软件安装完成只创建一个Polyspace R2020a快捷方式,我们可以进入安装目录再创建一个Matlab的快捷方式,如图</p><p><img src="https://img2.macxin.com/images/2020/03/26/QR1DarNaFx.gif"></p><p> 6.试运行</p><p><img src="https://img2.macxin.com/images/2020/03/27/8jbC6jTTwa.gif"></p><p>参考：</p><ul><li><a href="https://www.macxin.com/archives/18891.html">MATLAB R2020a v9.8.0 Mac/Win/Linux 官方原版+安装激活教程</a></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;MATLAB-R2020b官方v9-8-0Mac-Win原版及安装激活教程&quot;&gt;&lt;a href=&quot;#MATLAB-R2020b官方v9-8-0Mac-Win原版及安装激活教程&quot; class=&quot;headerlink&quot; title=&quot;MATLAB R2020b官方v9.</summary>
-      
-    
-    
-    
-    <category term="数学建模" scheme="https://zhangkh.top/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
-    
-    
-    <category term="数学建模" scheme="https://zhangkh.top/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
-    
-    <category term="Matlab" scheme="https://zhangkh.top/tags/Matlab/"/>
     
   </entry>
   
