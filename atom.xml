@@ -41,6 +41,30 @@
   </entry>
   
   <entry>
+    <title>Hexo框架博客编写脚本一键编写文章-博客部署</title>
+    <link href="https://zhangkh.top/df6316d8.html"/>
+    <id>https://zhangkh.top/df6316d8.html</id>
+    <published>2021-11-11T07:00:11.000Z</published>
+    <updated>2021-11-14T09:16:03.341Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo框架博客编写脚本一键编写文章-博客部署"><a href="#Hexo框架博客编写脚本一键编写文章-博客部署" class="headerlink" title="Hexo框架博客编写脚本一键编写文章-博客部署"></a>Hexo框架博客编写脚本一键编写文章-博客部署</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>经常打开终端敲代码上传文章到博客，重复性工作嘛，写个脚本吧</p><h2 id="CONTENT"><a href="#CONTENT" class="headerlink" title="CONTENT"></a>CONTENT</h2><ol><li><p>编写写作脚本（因为是win端环境，所以文件格式为.bat）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">cd C:\Users\kit\Desktop\zhangkaiheng_hexoblog</span><br><span class="line">set &#x2F;p name&#x3D;</span><br><span class="line">set address&#x3D;C:\Users\kit\Desktop\zhangkaiheng_hexoblog\source\_posts\%name%.md</span><br><span class="line">hexo new %name%&amp;&amp;start %address%</span><br></pre></td></tr></table></figure><p>注意最后一行创建md文件和打开md文件命令都要在一行并用&amp;&amp;隔开否则只会执行一项命令就退出终端了</p></li><li><p>编写博客部署脚本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">@REM cd &#x2F;c&#x2F;Users&#x2F;kit&#x2F;Desktop&#x2F;zhangkaiheng_hexoblog</span><br><span class="line">cd C:\Users\kit\Desktop\zhangkaiheng_hexoblog</span><br><span class="line">hexo clean&amp;&amp;hexo g&amp;&amp;gulp&amp;&amp;hexo d</span><br></pre></td></tr></table></figure><p>最后一行同理也是</p></li><li><p>mac端部署脚本如下（文件格式为.sh）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line">echo &quot;Start&quot;</span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">gulp</span><br><span class="line">hexo deploy</span><br><span class="line">echo &quot;Finish&quot;</span><br><span class="line">echo 按任意键继续</span><br><span class="line">read -n 1</span><br></pre></td></tr></table></figure></li><li><p>我们把脚本放到博客文件夹目录里，并发送快捷方式到桌面，以后写文章或者发文章就可以一键开始了，是不是很方便呢</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111111514902.png" alt="image-20211111151157315"></p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/202111111512095.png" alt="image-20211111151232181"></p></li></ol><h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2><p>一次配置，一直方便</p><p>参考文章：</p><ul><li><a href="https://blog.csdn.net/Jack_lzx/article/details/115333369">编写BAT脚本实现Hexo一键部署</a></li><li><a href="https://www.zdynb.cn/2021/hexo-yi-jian-chuang-jian-ji-bu-shu-jiao-ben.html">hexo一键创建及部署脚本 | 张登友的博客</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Hexo框架博客编写脚本一键编写文章-博客部署&quot;&gt;&lt;a href=&quot;#Hexo框架博客编写脚本一键编写文章-博客部署&quot; class=&quot;headerlink&quot; title=&quot;Hexo框架博客编写脚本一键编写文章-博客部署&quot;&gt;&lt;/a&gt;Hexo框架博客编写脚本一键编写文</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://zhangkh.top/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zhangkh.top/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo框架Blog不同平台移植</title>
     <link href="https://zhangkh.top/cec18dd8.html"/>
     <id>https://zhangkh.top/cec18dd8.html</id>
@@ -235,30 +259,6 @@
     <category term="数学建模" scheme="https://zhangkh.top/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
     
     <category term="Matlab" scheme="https://zhangkh.top/tags/Matlab/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ffmpeg无损快速剪切截取合并视频</title>
-    <link href="https://zhangkh.top/fe4b7fcd.html"/>
-    <id>https://zhangkh.top/fe4b7fcd.html</id>
-    <published>2021-03-05T04:05:37.000Z</published>
-    <updated>2021-03-05T04:05:37.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="FFmpeg无损快速剪切截取合并视频"><a href="#FFmpeg无损快速剪切截取合并视频" class="headerlink" title="FFmpeg无损快速剪切截取合并视频"></a>FFmpeg无损快速剪切截取合并视频</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>市场调研培训的视频时长10个多小时，太大（B站过审限制为10G，超过的要分P），但我只想把其中的广告剪去掉就能满足要求。用Final Cut Pro剪辑视频时导出367G？？？压缩还得好几十G。无奈，只好无损剪切视频。</p><h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>很多人都有这样的需求：就是把一部电影中的某一段单独保存下来。或用于编辑或用于保存这样的事情，通常被称为“分割”，或“切割”。其实，说截取比较好一些。就是从一段视频中把一小段截取出来做为已用。视频的截取，分为两种。一种是另存，一种是分割。这二者的区别在于：分割是无损的，速度快，基本上和拷贝的速度差不多；而另存，是重新编码，速度慢，如果你的机器很慢的话，那么就不是一个<em>“</em>慢<em>”</em>字了得了，如果你感情足够脆弱的话，会哭的<em>……</em></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>感谢<a href="https://github.com/FFmpeg/FFmpeg">FFmpeg</a></p><p>Mac安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install ffmpeg</span><br></pre></td></tr></table></figure><p>其他环境请自行百度谷歌</p><h2 id="截取视频"><a href="#截取视频" class="headerlink" title="截取视频"></a>截取视频</h2><p>截取INPUT视频从START到DURATION的片段输出为OUTPUT：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -y -ss START -t DURATION -i INPUT -c copy OUTPUT</span><br></pre></td></tr></table></figure><p>-y 覆盖已经存在的文件；</p><p>-ss 开始时间，如： 0:5:20，表示从5分20秒开始；</p><p>-t 时长，如： 0:9:39，表示截取4分19秒长的视频；</p><p>-i 输入，后面是空格，紧跟着就是输入视频文件；</p><p>-c copy，拷贝所有流；</p><p>INPUT，输入视频文件；</p><p>OUTPUT，输出视频文件；</p><p>例如截取input.mp4视频从0:5:20到0:9:39的片段输出为output.mp4：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -y -ss 0:5:20 -t 0:9:39 -i input.mp4 -c copy output.mp4</span><br></pre></td></tr></table></figure><h2 id="合并视频"><a href="#合并视频" class="headerlink" title="合并视频"></a>合并视频</h2><p>FFmpeg合并视频有很多方法，但首推使用<strong>FFmpeg concat 分离器</strong></p><p>先在要合并视频的文件夹内新建list.txt，里面编辑格式为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">file &#39;input1.mp4&#39;</span><br><span class="line">file &#39;input2.mp4&#39;</span><br><span class="line">file &#39;input3.mp4&#39;</span><br><span class="line">···</span><br></pre></td></tr></table></figure><p>然后进行读取txt文件里文件名进行concat合并视频：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -f concat -i list.txt -c copy output.mp4</span><br></pre></td></tr></table></figure><p>例如：将1.mp4与2.mp4进行合并，先打开终端切换到视频文件路径，在创建list.txt文件后进行编辑保存：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">file 1.mp4</span><br><span class="line">file 2.mp4</span><br></pre></td></tr></table></figure><p>终端执行下面代码进行合并</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -f concat -i list.txt -c copy output.mp4</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210305114637107.png" alt="image-20210305114637107"></p><h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><p>我的要传到的B站视频有1.67G，时长10:47:07，按照要求要把视频时长减为10小时以内，这样就只许把里面的广告剪切掉就行：首先利用截取视频提取不是广告的片段，然后利用合并视频将视频片段按照顺序进行合并。全程不到5分钟，而且视频无损，效率远大于视频剪辑。</p><p><img src="https://gitee.com/cit_k/pictures/raw/master/picture/image-20210305115405989.png" alt="image-20210305115405989"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>FFmpeg能力不止于此，还是非常强大的，比如视频格式转化、下载You-get不能下载的保护视频等</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;FFmpeg无损快速剪切截取合并视频&quot;&gt;&lt;a href=&quot;#FFmpeg无损快速剪切截取合并视频&quot; class=&quot;headerlink&quot; title=&quot;FFmpeg无损快速剪切截取合并视频&quot;&gt;&lt;/a&gt;FFmpeg无损快速剪切截取合并视频&lt;/h1&gt;&lt;h2 id=&quot;背</summary>
-      
-    
-    
-    
-    <category term="FFmpeg" scheme="https://zhangkh.top/categories/FFmpeg/"/>
-    
-    
-    <category term="FFmpeg" scheme="https://zhangkh.top/tags/FFmpeg/"/>
     
   </entry>
   
